@@ -1,4 +1,10 @@
+/*
+Un codigo con la idea de resolver el siguiente problema:
+ella nacio en
+Un muchacho se entretiene pintando su tablero de ajedrez. Planea cubrir cada espacio por completo en tonos rojos o azules. Para darle un toque personal, quiere contar con igual cantidad de espacios rojos y azules, evitando a su vez que dos filas o columnas presenten el mismo número de espacios rojos. ¿Podría pintar el tablero siguiendo estos criterios? ¿Qué pasaría si, en lugar de un tablero de ajedrez tradicional de 8x8, tuviera uno enorme de 1000x1000?
 
+Todo está escrito en JS para ser reproducido directamente en una consola, se puede correr en la consola del navegador, o en algún compilador online como: https://www.mycompiler.io/es/new/nodejs
+*/
 
 function grid(columns, rows, bColour = 'azul', rColour = 'rojo'){
 
@@ -113,13 +119,13 @@ function grid(columns, rows, bColour = 'azul', rColour = 'rojo'){
     }
 }
 
-console.log('en caso de ingresar tableros con valores inviables para el patron solicitado en el ejercicio se explicara la forma correcta de crear el patron\n grid\(8,8\)')
+console.log('En caso de ingresar tableros con valores inviables para el patrón solicitado en el ejercicio se explicará la forma correcta de crear el patrón\n grid\(8,8\)')
 grid(8,8)
 
-console.log('también genera error al ingresar números negativos, números flotantes o cadenas\n grid(\'fizz\',\'buzz\')')
+console.log('También genera error al ingresar números negativos, números flotantes o cadenas\n grid(\'fizz\',\'buzz\')')
 grid('fizz','buzz')
 
-console.log('al ingresar la función grid con los valores correctos se mostrará el número de posibilidades realizadas hasta la capacidad de 2^53 en cuyo caso se expresará que el tablero tiene más de 2^53 posibles patrones, también se mostraran por consola 3 posibles patrones \n grid(4,3)')
+console.log('Al ingresar la función grid con los valores correctos se mostrará el número de posibilidades realizadas hasta la capacidad de 2^53 en cuyo caso se expresará que el tablero tiene más de 2^53 posibles patrones, también se mostraran por consola 3 posibles patrones \n grid(4,3)')
 
 grid(4,3)
 
